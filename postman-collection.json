@@ -1,0 +1,165 @@
+{
+  "info": {
+    "name": "AI Resume Parser API",
+    "description": "API collection for AI Resume Parser & Optimizer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "health"]
+        }
+      }
+    },
+    {
+      "name": "Upload Resume",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/path/to/resume.pdf"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/upload",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "upload"]
+        }
+      }
+    },
+    {
+      "name": "Get All Resumes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/resumes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes"]
+        }
+      }
+    },
+    {
+      "name": "Get Resume by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/{{resumeId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "{{resumeId}}"]
+        }
+      }
+    },
+    {
+      "name": "Match Resume with Job",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"job-001\",\n  \"title\": \"Senior Java Developer\",\n  \"company\": \"Tech Giants Inc.\",\n  \"description\": \"Looking for experienced Java developer\",\n  \"requiredSkills\": [\"Java\", \"Spring Boot\", \"AWS\", \"PostgreSQL\"],\n  \"preferredSkills\": [\"Kubernetes\", \"React\"],\n  \"experienceLevel\": \"Senior (5+ years)\",\n  \"location\": \"San Francisco, CA\",\n  \"responsibilities\": [\n    \"Design microservices architecture\",\n    \"Lead technical decisions\"\n  ],\n  \"qualifications\": [\n    \"5+ years Java experience\",\n    \"Strong Spring Boot knowledge\"\n  ]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/{{resumeId}}/match",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "{{resumeId}}", "match"]
+        }
+      }
+    },
+    {
+      "name": "Optimize for ATS",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/{{resumeId}}/optimize-ats",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "{{resumeId}}", "optimize-ats"]
+        }
+      }
+    },
+    {
+      "name": "Search Similar Resumes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/search?query=Java Spring Boot developer&topK=5",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "search"],
+          "query": [
+            {
+              "key": "query",
+              "value": "Java Spring Boot developer"
+            },
+            {
+              "key": "topK",
+              "value": "5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Find Candidates for Job",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"job-001\",\n  \"title\": \"Senior Java Developer\",\n  \"company\": \"Tech Giants Inc.\",\n  \"description\": \"Looking for experienced Java developer with Spring Boot\",\n  \"requiredSkills\": [\"Java\", \"Spring Boot\", \"Microservices\"],\n  \"preferredSkills\": [\"AWS\", \"Docker\"],\n  \"experienceLevel\": \"Senior\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/resumes/find-candidates",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "resumes", "find-candidates"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "resumeId",
+      "value": "paste-resume-id-here"
+    }
+  ]
+}
