@@ -1,0 +1,65 @@
+JOHN DOE
+Software Engineer
+
+Email: john.doe@email.com
+Phone: (555) 123-4567
+Location: San Francisco, CA
+LinkedIn: linkedin.com/in/johndoe
+GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Experienced Full-Stack Software Engineer with 5+ years of expertise in building scalable web applications using modern technologies. Proficient in Java, Spring Boot, React, and cloud technologies. Proven track record of delivering high-quality software solutions in agile environments.
+
+TECHNICAL SKILLS
+- Languages: Java, JavaScript, TypeScript, Python, SQL
+- Frameworks: Spring Boot, Spring AI, React, Node.js, Express
+- Databases: PostgreSQL, MongoDB, Redis
+- Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, Kubernetes, Jenkins
+- Tools: Git, Maven, Gradle, IntelliJ IDEA, VS Code
+- Methodologies: Agile, Scrum, TDD, CI/CD
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Tech Innovations Inc. | Jan 2021 - Present
+- Led development of microservices architecture serving 1M+ daily active users
+- Implemented AI-powered features using Spring AI and OpenAI, increasing user engagement by 35%
+- Designed and developed RESTful APIs using Spring Boot and PostgreSQL
+- Mentored junior developers and conducted code reviews
+- Reduced application response time by 40% through optimization and caching strategies
+- Technologies: Java, Spring Boot, Spring AI, AWS, PostgreSQL, Redis
+
+Software Engineer | Digital Solutions Co. | Jun 2019 - Dec 2020
+- Developed and maintained enterprise web applications using React and Spring Boot
+- Implemented automated testing achieving 85% code coverage
+- Collaborated with cross-functional teams in agile sprints
+- Migrated legacy monolith to microservices architecture
+- Technologies: Java, Spring Framework, React, MySQL, Docker
+
+Junior Software Developer | StartupXYZ | Jan 2018 - May 2019
+- Built responsive front-end components using React and Redux
+- Developed backend services using Node.js and Express
+- Participated in daily standups and sprint planning
+- Technologies: JavaScript, React, Node.js, MongoDB
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2017
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- Oracle Certified Professional, Java SE 11 Developer
+- Certified Scrum Master (CSM)
+
+PROJECTS
+
+AI Resume Parser (Personal Project)
+- Built an intelligent resume parsing system using Spring AI and OpenAI
+- Implemented vector embeddings for semantic search and resume matching
+- Technologies: Spring Boot, Spring AI, PostgreSQL with pgvector
+
+E-Commerce Platform (Open Source)
+- Contributed to popular e-commerce platform with 2K+ GitHub stars
+- Implemented payment gateway integration and order management system
+- Technologies: Java, Spring Boot, React, Stripe API

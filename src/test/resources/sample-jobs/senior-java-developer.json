@@ -1,0 +1,41 @@
+{
+  "id": "job-001",
+  "title": "Senior Java Developer",
+  "company": "Tech Giants Inc.",
+  "description": "We are seeking an experienced Senior Java Developer to join our growing engineering team. The ideal candidate will have strong experience with Spring Boot, microservices architecture, and cloud technologies.",
+  "requiredSkills": [
+    "Java",
+    "Spring Boot",
+    "Microservices",
+    "RESTful APIs",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
+  ],
+  "preferredSkills": [
+    "Spring AI",
+    "Kubernetes",
+    "React",
+    "Redis",
+    "CI/CD"
+  ],
+  "experienceLevel": "Senior (5+ years)",
+  "location": "San Francisco, CA (Hybrid)",
+  "responsibilities": [
+    "Design and develop scalable microservices using Spring Boot",
+    "Collaborate with cross-functional teams to define and implement new features",
+    "Write clean, maintainable, and well-tested code",
+    "Participate in code reviews and mentor junior developers",
+    "Optimize application performance and troubleshoot production issues",
+    "Contribute to architectural decisions and technical documentation"
+  ],
+  "qualifications": [
+    "5+ years of professional software development experience",
+    "Strong proficiency in Java and Spring Boot framework",
+    "Experience with microservices architecture and RESTful API design",
+    "Solid understanding of database design and SQL",
+    "Experience with cloud platforms (AWS preferred)",
+    "Excellent problem-solving and communication skills",
+    "Bachelor's degree in Computer Science or related field"
+  ]
+}
